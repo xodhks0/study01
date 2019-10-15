@@ -1,10 +1,10 @@
 package study01.test13;
 
-public class ListTest {
+public class ListTestTest {
 
 	private String[] strs;
 
-	public ListTest() {
+	public ListTestTest() {
 		this.strs = new String[0];
 	}
 
@@ -46,31 +46,24 @@ public class ListTest {
 			remove(idx);
 		}
 	}
+
 	public void remove(int idx) {
-		String[] tmp =strs;
-		strs = new String[strs.length-1];
-		for (int i =0;i<idx;i++) {
-			strs[i] =tmp[i];
+		String[] tmp = strs;
+		strs = new String[strs.length - 1];
+		for (int i = 0; i < idx; i++) {
+			strs[i] = tmp[i];
 		}
-		for (int i= idx+1;i<tmp.length; i++) {
-			strs[i-1]=tmp[i];
+		for (int i = idx+1; i < tmp.length; i++) {
+			strs[i - 1] = tmp[i];
 		}
-	}
-	public static void main(String[] args) {
-		ListTest lt = new ListTest();
-		lt.add("안");
-		lt.add("녕");
-		lt.add("하");
-		lt.add("세");
-		lt.add("요");
-		System.out.println(lt);
-		lt.remove(2);
-		System.out.println(lt);
-		lt.remove(2);
-		System.out.println(lt);
-		lt.remove(2);
-		System.out.println(lt);
-		System.out.println(lt.indexOf("안"));
 	}
 
+	public static void main(String[] args) {
+		ListTestTest lt = new ListTestTest();
+		lt.add("a");
+		lt.add("b");
+		lt.add("c");
+		lt.remove(1);
+		System.out.println(lt);
+	}
 }
