@@ -87,35 +87,34 @@ public class Execute {
 
 	}
 
+	void initResponse() {
+		String res = "";
+		while (!res.equals("q")) {
+			System.out.println("원하는 서비스 번호를 입력하세요.");
+			System.out.println("1. 유저 생성");
+			System.out.println("2. 유저 삭제");
+			System.out.println("3. 유저 수정");
+			System.out.println("4. 유저 조회");
+			System.out.println("q. 종료");
+			res = scan.nextLine();
+			if ("1".equals(res)) {
+
+			} else if ("2".equals(res)) {
+
+			} else if ("3".equals(res)) {
+
+			} else if ("4".equals(res)) {
+
+			} else if ("q".equals(res)) {
+				System.out.println("시스템이 종료됩니다.");
+			} else {
+				System.out.println("입력하신 서비스가 없습니다.");
+			}
+		}
+	}
+
 	public static void main(String[] args) {
 		Execute ex = new Execute();
-
-		System.out.println("원하는 서비스 번호를 입력하세요.");
-		System.out.println("1. 유저 생성");
-		System.out.println("2. 유저 삭제");
-		System.out.println("3. 유저 수정");
-		System.out.println("4. 유저 조회");
-		System.out.println("q. 종료");
-		String str = ex.scan.nextLine();
-		if (str.equals("q")) {
-			System.out.println("종료");
-		} else if (str.equals("1")) {
-			System.out.println("유저 생성을 선택하셨습니다.");
-			ex.insert();
-
-		} else if (str.equals("2")) {
-			System.out.println("유저 삭제를 선택하셨습니다.");
-			ex.delete();
-
-		} else if (str.equals("3")) {
-			System.out.println("유저 수정을 선택하셨습니다.");
-			ex.update();
-
-		} else {
-			System.out.println("유저 조회를 선택하셨습니다.");
-			ex.select();
-
-		}
 
 		/*
 		 * System.out.println("insert, delete, select, update 원하는걸 선택해주세요"); String str
