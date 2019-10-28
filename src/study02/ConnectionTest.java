@@ -11,7 +11,7 @@ public class ConnectionTest {
 	public static void main(String[] args) {
 		String url = "jdbc:oracle:thin:@localhost:1521:xe"; // 포트번호
 		String id = "bdi"; // 이름
-		String pwd = "12345678";  // 비밀번호 
+		String pwd = "a1a2a3a4a5";  // 비밀번호 
 
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver"); // Class 라는 class가 따로 존재한다.oracle을 사용할거라고 알려주는거

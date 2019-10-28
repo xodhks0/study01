@@ -14,7 +14,7 @@ public class DBCon {
 	static {
 		URL = "jdbc:oracle:thin:@localhost:1521:xe";
 		ID = "BDI";
-		PWD = "12345678";
+		PWD = "a1a2a3a4a5";
 		DRIVER_NAME = "oracle.jdbc.driver.OracleDriver";
 		try {
 			Class.forName(DRIVER_NAME);
@@ -26,7 +26,7 @@ public class DBCon {
 
 	private static Connection con;
 
-	public static Connection getCon() { // throws SQLException 일어날수도 있는 오류를 넘겨준것
+	public static Connection getCon() { // throws SQLException �씪�뼱�궇�닔�룄 �엳�뒗 �삤瑜섎�� �꽆寃⑥�寃�
 		if (con == null) {
 			try {
 				con = DriverManager.getConnection(URL, ID, PWD);
